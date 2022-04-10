@@ -13,9 +13,10 @@ class Usuario extends CI_Controller {
 
 	{
        $data['selPerfil'] = $this->Model_usuario->selPerfil();
-       $usuario['usuarios'] = $this->Model_usuario->selusuario();
+       $data['usuarios'] = $this->Model_usuario->selusuario();
 
         $this->load->view('plantilla');
+        $this->load->view('usuario/popu' , $data);
 		$this->load->view('usuario/index', $data);
 	}
     public function registro(){
@@ -38,8 +39,15 @@ class Usuario extends CI_Controller {
     $this->index();
     echo "no se pudo registrar";
 }
+
     
 }
+
+public function consultas()
+	{   $data['titulo']="mi paghina en crud echo con bootstrap";
+        $this->load->view('plantilla');
+		$this->load->view('usuario/list', $data);
+	}
 }
 
 

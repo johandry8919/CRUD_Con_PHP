@@ -10,6 +10,8 @@
     <link  href="<?= base_url('public/css/bootstrap.css')?>" rel="stylesheet">
     <link  href="<?= base_url('public/css2/style.css')?>" rel="stylesheet">
     <script  src="<?php echo base_url('public/js/bootstrap.js')?>"></script>
+    
    
     <title>CRUD Con bootstrap</title>
 </head>
+<body>

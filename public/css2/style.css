@@ -10,4 +10,92 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+   
+}
+table{
+    width: 100%;
+    padding-top: 10px;
+}
+table, th, td {
+    border:1px solid black;
+    
+  }
+
+
+
+.Contenedor .alertas{
+      background-color: #db0d0d;
+      /* display: none; */
+  }
+
+.error{
+    color: #db0d0d;
+    border: solid 1px red;
+}
+.error:invalid{
+    border: solid 1px rgb(255, 0, 0);
+}
+
+
+
+button {
+    display: block;
+    margin: 20px auto;
+    background: salmon;
+    color: white;
+    border: 0;
+    padding: 6px 10px;
+    cursor: pointer;
+}
+ 
+button:hover {
+    background: palevioletred;
+    transition: all 0.2s;
+}
+ 
+.popup-wrapper {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100vh;
+    display: none;
+}
+ 
+.popup {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    max-width: 80%;
+    background: white;
+    margin: 10% auto;
+    padding: 20px;
+    position: relative;
+    overflow: auto ;
+   
+}
+ 
+.popup a {
+    background: salmon;
+    color: white;
+    text-decoration: none;
+    padding: 6px 10px;
+    margin: 30px auto;
+    display: block;
+    width: 50%;
+}
+ 
+.popup a:hover {
+    background: palevioletred;
+    transition: all 0.2s;
+}
+ 
+.popup-close {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 1.5rem;
 }

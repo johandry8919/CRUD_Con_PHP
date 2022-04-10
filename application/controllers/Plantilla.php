@@ -13,4 +13,6 @@ class Plantilla extends CI_Controller {
 	{   $titulo['titulo']="mi paghina en crud echo con bootstrap";
 		$this->load->view('plantilla', $titulo);
 	}
+
+	
 }

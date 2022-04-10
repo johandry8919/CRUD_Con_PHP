@@ -1,8 +1,4 @@
-<body>
+
 <div>
-<?php foreach($usuario as $perfil ):?>
-            <div><?php echo $perfil?></div>
-            <?php endforeach;?>
-    </div>
-</body>
-</html>
+    <h2>lista de usuarios </h2>
+</div>
